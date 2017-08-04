@@ -41,6 +41,18 @@ public class torbaHelper {
 		torba4.put("Danimarka", new String[]{"Kopenhag"});
 		torba4.put("Rusya", new String[]{"Rostov"});
 	}
+	
+	public String ulkeControl (String ulke){
+		
+		for (int i = 0; i < torba1.size(); i++) {
+			
+			if(ulke.equals(torba1.get(i)[0])){
+				System.out.println(ulke);
+				return ulke;
+			}
+		}
+		return "bulunamadı";
+	}
 
 	public HashMap<String, String[]> getTorba2() {
 		return torba2;
@@ -67,6 +79,7 @@ public class torbaHelper {
 	}
 
 	public HashMap<String, String[]> getTorba1() {
+		
 		return torba1;
 	}
 
