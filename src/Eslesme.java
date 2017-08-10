@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class Eslesme {
 
-	String[] ulkeler = new String[]{"İspanya", "İngiltere", "Almanya", "Fransa","Porktekiz","İtalya", "Rusya", "İsviçre", "Ukrayna", "Hollanda", "İskoçya","Türkiye","Polonya","Bulgaristan","Hırvatistan","Danimarka"};
+	String[] ulkeler = new String[]{"İspanya", "İngiltere", "Almanya", "Fransa","Portekiz","İtalya", "Rusya", "İsviçre", "Ukrayna", "Hollanda", "İskoçya","Türkiye","Polonya","Bulgaristan","Hırvatistan","Danimarka"};
 	String[] grupA = new String[]{};
 	String[] grupB = new String[]{};
 	String[] grupC = new String[]{};
@@ -14,15 +14,18 @@ public class Eslesme {
 	int n;
 	String takim;
 	torbaHelper torba1 = new torbaHelper();
+	String ulke;
 	
 	public void grupOlustur(){
 		
 		Random rand = new Random();
-		n = rand.nextInt(1)+0;
+		n = rand.nextInt(2)+0;
 		System.out.println(n);
-		System.out.println(getRandomUlke());
-		System.out.println(torba1.getTorba1().get(getRandomUlke()));
-		takim = torba1.getTorba1().get(getRandomUlke())[n];
+		ulke = getRandomUlke();
+		System.out.println(ulke);
+		
+		System.out.println(torba1.getTorba1().get(ulke));
+		takim = torba1.getTorba1().get(ulke)[n];
 		System.out.println(takim);
 		
 	}

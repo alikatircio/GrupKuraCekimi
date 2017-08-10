@@ -1,3 +1,4 @@
+
 import java.util.HashMap;
 
 public class torbaHelper {
@@ -6,8 +7,13 @@ public class torbaHelper {
 	HashMap<String, String[]> torba2 =new HashMap<>();
 	HashMap<String, String[]> torba3 =new HashMap<>();
 	HashMap<String, String[]> torba4 =new HashMap<>();
+	String[][] torba11 = new String[6][1];
+	
 	
 	public torbaHelper(){
+		
+		torba11[0][0]= "";
+		
 		torba1.put("İspanya", new String[]{"Real Madrid","Barcelona"});
 		torba1.put("İngiltere", new String[]{"Leicester City"});
 		torba1.put("Almanya", new String[]{"Bayern Munih"});
@@ -42,6 +48,14 @@ public class torbaHelper {
 		torba4.put("Rusya", new String[]{"Rostov"});
 	}
 	
+	public String[][] getTorba11() {
+		return torba11;
+	}
+
+	public void setTorba11(String[][] torba11) {
+		this.torba11 = torba11;
+	}
+
 	public String ulkeControl (String ulke){
 		
 		for (int i = 0; i < torba1.size(); i++) {
