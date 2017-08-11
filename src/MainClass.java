@@ -5,8 +5,5 @@ public class MainClass {
 		// TODO Auto-generated method stub
 		Eslesme eslesme = new Eslesme();
 		eslesme.grupOlustur();
-		
-		
-		
 	}
 }
