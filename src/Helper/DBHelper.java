@@ -8,5 +8,6 @@ public class DBHelper {
 	public static String teams = "select * from teams order by id asc";
 	public static String gruplar = "select * from grup";
 	public static String torbalar = "select * from torba order by team_id asc";
+	public static String groups = "select * from groups";
 	//public static String teams = "select tm.* from TORBA trb, teams tm where TRB.TEAM_ID =TM.ID and trb.id=?";
 }
